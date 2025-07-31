@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="選物神探 - 利用 AI 分析商品圖片並推薦類似好物，還能支援贊助連結，LINE Bot 與網站雙平台同步推廣。">
+  <title>選物神探 - AI 選品推薦工具</title>
+  <!-- Google Analytics（可換 ID） -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans TC', sans-serif; color: #333; line-height: 1.6; }
+    a { color: #2c3e50; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: 90%; max-width: 800px; margin: 0 auto; padding: 20px; }
+
+    .hero { text-align: center; padding: 60px 0; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.1rem; color: #555; margin-bottom: 20px; }
+    .btn { display: inline-block; background: #e67e22; color: #fff; padding: 12px 24px; border-radius: 8px; font-size: 1rem; transition: background .3s; }
+    .btn:hover { background: #d35400; }
+
+    .features { display: grid; gap: 20px; margin: 40px 0; }
+    @media (min-width: 600px) { .features { grid-template-columns: repeat(2, 1fr); } }
+    .feature-item { background: #f9f9f9; padding: 20px; border-radius: 8px; text-align: center; }
+    .feature-item h3 { margin-bottom: 10px; font-size: 1.2rem; }
+
+    .screenshots { margin: 40px 0; }
+    .screenshots h2 { text-align: center; margin-bottom: 20px; font-size: 1.8rem; }
+    .screenshots img { border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; }
+    .screenshots .note { text-align: center; font-size: .9rem; color: #777; margin-top: 8px; margin-bottom: 20px; }
+
+    .support { text-align: center; margin: 60px 0; }
+    .support p { margin-bottom: 10px; }
+
+    .faq { margin: 60px 0; }
+    .faq h2 { margin-bottom: 20px; font-size: 1.5rem; text-align: center; }
+    .faq-item { margin-bottom: 15px; background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #eee; }
+    .faq-item summary { font-weight: bold; cursor: pointer; padding: 5px 0; outline: none; }
+    .faq-item p { margin: 10px 0 0 15px; padding-bottom: 5px; }
+
+    @media (max-width: 768px) {
+      .screenshots img { width: 100%; height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>選物神探</h1>
+      <p>用 AI 分析商品圖片，推薦好物，還能幫你賺回饋！</p>
+      <a class="btn" href="https://lin.ee/xxxxx" target="_blank">加入 LINE Bot 試用</a>
+    </section>
+
+    <section class="features">
+      <div class="feature-item">
+        <h3>📷 AI 圖片推薦</h3>
+        <p>上傳商品圖片，自動推薦風格相近好物。</p>
+      </div>
+      <div class="feature-item">
+        <h3>🔗 贊助連結整合</h3>
+        <p>點擊推薦商品可跳轉蝦皮 / momo 等平台，並支援回饋機制。</p>
+      </div>
+      <div class="feature-item">
+        <h3>💬 LINE Bot 整合</h3>
+        <p>用 LINE 傳圖片就能快速獲得推薦。</p>
+      </div>
+      <div class="feature-item">
+        <h3>🧪 測試版本功能</h3>
+        <p>內部測試階段，歡迎先試用並提供回饋。</p>
+      </div>
+    </section>
+
+    <section class="screenshots">
+      <h2>使用畫面預覽</h2>
+      <img src="assets/upload-demo.png" alt="圖片上傳範例">
+      <p class="note">圖片上傳與推薦回覆示意</p>
+      <img src="assets/menu-demo.png" alt="LINE 圖文選單範例">
+      <p class="note">LINE 圖文選單介面範例</p>
+    </section>
+
+    <section class="support">
+      <h2>支持我們開發</h2>
+      <p>如果你喜歡這個工具，歡迎贊助我們持續開發 ❤️</p>
+      <a href="https://www.buymeacoffee.com/yourname" target="_blank">
+        <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me a Coffee">
+      </a>
+    </section>
+
+    <section class="faq">
+      <h2>常見問題</h2>
+      <details class="faq-item">
+        <summary>Q：這是免費的嗎？</summary>
+        <p>目前開放試用階段完全免費，未來可能推出進階版本。</p>
+      </details>
+      <details class="faq-item">
+        <summary>Q：我可以上傳什麼圖片？</summary>
+        <p>任何清楚的商品照片，例如包包、鞋子、衣服、家具等皆可。</p>
+      </details>
+      <details class="faq-item">
+        <summary>Q：LINE Bot 有什麼功能？</summary>
+        <p>圖片推薦、最近推薦記錄、支援功能選單等。</p>
+      </details>
+    </section>
+  </div>
+</body>
+</html>
