@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="選物神探 - 利用 AI 分析商品圖片並推薦類似好物，LINE Bot 與網站雙平台同步推廣。">
+  <meta name="description" content="選物神探 - 利用 AI 分析商品圖片並推薦相關特色好物，LINE Bot 與網站雙平台同步推廣。">
   <title>選物神探 - AI 選品推薦工具</title>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GTRXJ7C07"></script>
@@ -68,6 +68,38 @@
     .btn:hover {
       background: #d35400;
       transform: translateY(-3px); /* 懸停時上移 */
+    }
+
+    /* 測試邀請區塊 */
+    .test-invite {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #fff8e1; /* 淺黃色背景 */
+      border-radius: 12px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border: 1px solid #ffe082;
+    }
+    .test-invite h2 {
+      font-size: 1.8rem;
+      color: #e67e22;
+      margin-bottom: 15px;
+    }
+    .test-invite p {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .test-invite .btn-group a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .test-invite .btn-group .btn-feedback {
+      background: #3498db; /* 藍色按鈕 */
+      box-shadow: 0 4px 10px rgba(52, 152, 219, 0.4);
+    }
+    .test-invite .btn-group .btn-feedback:hover {
+      background: #2980b9;
     }
 
     /* 功能特色區塊 */
@@ -238,13 +270,23 @@
     <section class="hero">
       <h1>選物神探</h1>
       <p>用 AI 分析商品圖片，推薦好物！</p>
-      <a class="btn" href="https://lin.ee/2jPsB9p" target="_blank">加入 LINE Bot 試用</a>
+      <!-- 移除原有的加入 LINE Bot 試用按鈕，讓測試邀請區塊成為主要入口 -->
+    </section>
+
+    <section class="test-invite">
+      <h2>🎉 內測進行中！歡迎加入測試！</h2>
+      <p>目前「選物神探」正在進行內部測試，歡迎您隨意邀請測試的朋友加入 LINE Bot 試用。</p>
+      <div class="btn-group">
+        <a class="btn" href="https://lin.ee/2jPsB9p" target="_blank">點我加入 LINE Bot</a>
+        <a class="btn btn-feedback" href="https://forms.gle/jg4xXhhzW87QByJY7" target="_blank">填寫意見回饋表單</a>
+      </div>
+      <p style="margin-top: 20px;">如果您在使用過程有任何意見或建議，都非常歡迎填寫表單幫助我們改進！</p>
     </section>
 
     <section class="features">
       <div class="feature-item">
-        <h3>📷 AI 圖片辨識</h3>
-        <p>上傳商品圖片，AI 智慧判斷是否為特色商品，並提供相關資訊。</p>
+        <h3>📷 AI 圖片辨識與回覆卡片</h3>
+        <p>上傳商品圖片，AI 智慧辨識並回傳包含商品圖片與相關資訊的訊息卡片。</p>
       </div>
       <div class="feature-item">
         <h3>💬 LINE Bot 整合</h3>
@@ -261,11 +303,11 @@
       <div class="screenshot-grid">
         <div class="screenshot-item">
           <img src="3111510.jpg" alt="LINE Bot 圖片上傳與商品辨識（鳳梨酥）">
-          <p class="note">上傳商品圖片，AI 智慧辨識並提供特色商品資訊</p>
+          <p class="note">（未來可換成卡片訊息截圖）上傳商品圖片，AI 智慧辨識並提供特色商品資訊</p>
         </div>
         <div class="screenshot-item">
           <img src="3111509.jpg" alt="LINE Bot 圖片上傳與商品辨識（日本當地特產）">
-          <p class="note">支援跨國商品辨識與當地特產資訊</p>
+          <p class="note">（未來可換成卡片訊息截圖）支援跨國商品辨識與當地特產資訊</p>
         </div>
         <div class="screenshot-item">
           <img src="3111508.jpg" alt="LINE Bot 查詢方案與使用次數">
@@ -290,11 +332,11 @@
       </details>
       <details class="faq-item">
         <summary>Q：我可以上傳什麼圖片？</summary>
-        <p>目前主要支援食物商品的圖片上傳，AI 會根據您上傳的圖片內容，自動判斷並推薦相關的特色商品。我們也持續擴展辨識範圍，未來將支援更多種類的商品圖片。</p>
+        <p>目前主要支援食物商品的圖片上傳，AI 會根據您上傳的圖片內容，自動判斷並回傳卡片訊息。我們也持續擴展辨識範圍，未來將支援更多種類的商品圖片。</p>
       </details>
       <details class="faq-item">
         <summary>Q：LINE Bot 有什麼功能？</summary>
-        <p>圖片上傳與辨識、辨識特色商品、支援功能選單、方案查詢等。</p>
+        <p>圖片上傳與辨識、回覆卡片訊息（含圖片）、辨識特色商品、支援功能選單、方案查詢等。</p>
       </details>
       <details class="faq-item">
         <summary>Q：如何查詢我的使用方案？</summary>
